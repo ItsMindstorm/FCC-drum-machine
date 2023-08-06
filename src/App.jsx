@@ -2,7 +2,7 @@ import Buttons from "./components/Buttons";
 
 function App() {
   return (
-    <>
+    <div className="animate-fade-in">
       <div className="w-full mx-auto text-center">
         <h1 className="text-pink-200 font-bold pb-1">Drum Machine</h1>
       </div>
@@ -12,7 +12,7 @@ function App() {
       >
         <Buttons />
       </div>
-    </>
+    </div>
   );
 }
 
