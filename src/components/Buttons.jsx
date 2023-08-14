@@ -6,7 +6,7 @@ import Options from "./Options";
 function Buttons() {
   const setCurrentDrumKit = useDrumStore((store) => store.setCurrentDrumKit);
   const setCurrentDrumKitDescription = useDrumStore(
-    (store) => store.setCurrentDrumKitDescription
+    (store) => store.setCurrentDrumKitDescription,
   );
 
   const setvolume = useDrumStore((store) => store.volume);
@@ -37,7 +37,7 @@ function Buttons() {
       }
 
       const playedDrumKit = HeaterKit.find((element) =>
-        matchesDescription(selector, element.text)
+        matchesDescription(selector, element.text),
       );
 
       if (playedDrumKit) {
