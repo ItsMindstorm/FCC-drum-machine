@@ -58,7 +58,7 @@ function Buttons() {
             onClick={() => {
               playKit(kits.text);
             }}
-            key={crypto.randomUUID()}
+            key={kits.text}
           >
             <button
               type="button"
