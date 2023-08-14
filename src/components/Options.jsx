@@ -1,12 +1,12 @@
 import ReactSwitch from "react-switch";
 import { useDrumStore } from "../store";
 import { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function Options() {
   const currentKitDescription = useDrumStore(
-    (state) => state.currentDrumKitDescription
+    (state) => state.currentDrumKitDescription,
   );
   const setVolume = useDrumStore((state) => state.setVolume);
   const volume = useDrumStore((state) => state.volume);
@@ -50,7 +50,10 @@ function Options() {
           <h1 className="text-green-300 text-lg font-sans font-bold">
             {currentKitDescription}
           </h1>
-	    <h1 className="text-green-300 text-lg font-sans font-bold">Made with <FontAwesomeIcon icon={faHeart} className="px-2" /> by Yves</h1>
+          <h1 className="text-green-300 text-lg font-sans font-bold">
+            Made with <FontAwesomeIcon icon={faHeart} className="mx-0.5" /> by
+            Yves
+          </h1>
         </div>
       </div>
     </>
